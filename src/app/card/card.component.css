@@ -1,0 +1,62 @@
+
+.info-data {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, lfr));
+    grid-gap: 20px;
+}
+.container {
+    margin-left: 10px;
+}
+.card{
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--light);
+    box-shadow: 4px 4px 16px rgba(0, 0, 0,.05);
+}
+
+.card .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card .head h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card .head p {
+    font-size: 14px;
+}
+.card .head .icon {
+    font-size: 20px;
+    color: var(--green);
+}
+.card .head .icon.down {
+    color: var(--red);
+}
+.card .progress {
+    display: block;
+    margin-top: 24px;
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background: var(--grey);
+    overflow-y: hidden;
+    position: relative;
+    margin-bottom: 4px;
+}
+.card .progress::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--blue);
+    width: 50%;
+}
+.card .label {
+    font-size: 14px;
+    font-weight: 700;
+}
